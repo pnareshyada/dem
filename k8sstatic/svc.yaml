@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name:  statick8s-svc
+  namespace: statick8s
+spec:
+  selector:
+    app:  statick8s
+  type:  LoadBalancer
+  ports:
+  - name:  statick8s
+    port:  80
+    targetPort:  8080
