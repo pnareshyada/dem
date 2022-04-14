@@ -1,6 +1,6 @@
 FROM httpd
-WORKDIR /usr/local/apache2/htdocs/
-COPY ./dem/
+COPY . /usr/local/apache2/htdocs/
+
 
 
 
